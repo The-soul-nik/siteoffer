@@ -1,0 +1,10 @@
+<div class="card mb-4">
+  <div class="card-header">
+    <h2>{{ post.title }}</h2>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><p>{{ post.body }}</p></h5>
+    <p class="card-text"><em>{{ post.date_pub }}</em></p>
+    <a href="{% url 'blog:post_detail_url' slug=post.slug %}" class="btn btn-primary">Read</a>
+  </div>
+</div>

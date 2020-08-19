@@ -1,0 +1,16 @@
+{% extends 'blog/base_blog.html' %}
+    <h2>i hate extends</h2>
+
+
+{% block title %}
+  Posts list
+{% endblock %}
+
+
+{% block content %}
+  {% for post in posts %}
+
+  {% include 'blog/includes/post_card_template.html' %}
+
+  {% endfor %}
+{% endblock %}
